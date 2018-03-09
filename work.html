@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Amaranth:400i|Great+Vibes" rel="stylesheet">
+	<link rel="stylesheet" href="workStyle.css">
+	<title>Document</title>
+</head>
+<body>
+	<img src="https://cdn.pixabay.com/photo/2017/06/13/13/51/white-2398946_960_720.jpg" alt="">
+	<div class="container">
+		<div id="overlay1">M</div>
+		<div id="overlay2">Y</div>
+		<div id="overlay3">W</div>
+		<div id="overlay4">O</div>
+		<div id="overlay5">R</div>
+		<div id="overlay6">K</div>
+	</div>
+	<script>
+		var layers = document.querySelectorAll(".container>*");
+		setTimeout(function(){
+			document.querySelector(".container").addEventListener("mouseover",function(){
+			for(var i=0; i< layers.length; i++ ){
+			layers[i].style.transform = "translateY(-1000px)";
+		}
+		})
+		}, 2000);
+		
+		
+	</script>
+</body>
+</html>

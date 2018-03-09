@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Amaranth:400i|Great+Vibes" rel="stylesheet">
+	<link rel="stylesheet" href="aboutMeStyle.css">
+	<title>about me page</title>
+</head>
+<body>
+	<img src="http://www.haitian-truth.org/wp-content/uploads/2012/11/cubechaos.png" alt="">
+	<div class="container">
+		<div id="overlay1">A</div>
+		<div id="overlay2">B</div>
+		<div id="overlay3">O</div>
+		<div id="overlay4">U</div>
+		<div id="overlay5">T</div>
+		<div id="overlay6">M</div>
+		<div id="overlay6">E</div>
+	</div>
+	<script>
+		var layers = document.querySelectorAll(".container>*");
+		setTimeout(function(){
+			document.querySelector(".container").addEventListener("mouseover",function(){
+			for(var i=0; i< layers.length; i++ ){
+			layers[i].style.transform = "translateY(-1000px)";
+		}
+		})
+		}, 1000);
+		
+		
+	</script>
+</body>
+</html>

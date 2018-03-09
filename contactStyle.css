@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+}
+.container{
+	height: 100vh;
+	width: 100vw;
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	position: fixed;
+	z-index: 2;
+}
+.container>*{
+	background: rgba(114, 115, 117, 0.7);
+	/*border: 2px solid #eee;*/
+	font-family: 'Amaranth', sans-serif;
+	font-size: 4em;
+	line-height: 80px;
+	color: #fff;
+	text-align: center;
+	transition: all 1s ease-in 100ms;
+}
